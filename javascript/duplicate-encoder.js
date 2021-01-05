@@ -41,7 +41,7 @@ function duplicateEncode(str){
     //loop through all letters in string
       for (var i = 0; i < word.length; i++) {
     //check for any characters that repeat
-        if (word.lastIndexOf(word[i]) === word.indexOf(word[i])) {
+        if (word.lastIndexOf(word[i]) === word.indexOf(word[i])) { //comparing always with the last position make it possible to easily verify repetions!!!!
     //for each character that never dupes, place (
           unique += '(';
         } else
